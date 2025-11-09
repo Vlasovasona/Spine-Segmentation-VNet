@@ -27,7 +27,7 @@ __Ссылка на источник:__ https://www.kaggle.com/datasets/pycadmk/
 
 ## Обоснование выбора архитектуры модели
 
-![alt text](image.png)
+![alt text](images/image.png)
 
 Так как при решении задачи мы пользуемся 3D данными (имеющееся GPU позволяет обучать нейросети на 3D), выбирались архитектуры, позволяющие решать задачу многоклассовой классификации на 3D данных. Эксперимент проводился с архитектурой **V-Net** (https://github.com/faustomilletari/VNet/tree/master). На рисунке выше можно увидеть схематичное изображение архитектуры V-Net.
 
@@ -43,23 +43,23 @@ __Ссылка на источник:__ https://www.kaggle.com/datasets/pycadmk/
 
 Была изучена статья (https://arxiv.org/pdf/1606.04797) с обзором архитектуры. В статье приводилась сравнительная таблица алгоритмов loss-функций, можно было понять, что лучшим вариантом для loss в V-Net будет использование Dice-based loss. 
 
-![alt text](image-1.png)
+![alt text](images/image-1.png)
 
 Процесс обучения:
 
-![alt text](image-7.png)
+![alt text](images/image-7.png)
 
 ## Примеры реализации работы модели
 
-![alt text](image-2.png)
+![alt text](images/image-2.png)
 
-![alt text](image-3.png)
+![alt text](images/image-3.png)
 
-![alt text](image-4.png)
+![alt text](images/image-4.png)
 
-![alt text](image-5.png)
+![alt text](images/image-5.png)
 
-![alt text](image-6.png)
+![alt text](images/image-6.png)
 
 а) Модель хорошо определяет фон снимков от позвоночника
 
@@ -71,7 +71,7 @@ __Ссылка на источник:__ https://www.kaggle.com/datasets/pycadmk/
 
 ### **Обращу внимание, что модель недоучилась (по графикам loss и Dice score на валидации видно, что loss на 40 эпохе продолжал падать, при этом Dice медленно рос). Полагаю, что сорока эпох для модели маловато и нужно ее доучить**
 
-![alt text](image-8.png)
+![alt text](images/image-8.png)
 
 ## План по развитию проекта для определения патологии - отеохондроз
 
